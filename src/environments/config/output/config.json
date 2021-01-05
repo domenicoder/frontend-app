@@ -1,0 +1,7 @@
+{
+    "ip": "http://localhost",
+    "port": "5000",
+    "production": false,
+    "showShutdownButton": false,
+    "showBnsfSection": false
+}

@@ -1,0 +1,36 @@
+.background-image{
+    background: radial-gradient(circle at center, #161b28, #000);
+    position: relative;
+    z-index: 1;
+}
+
+.loginLabel{
+    width: 500px; 
+    height: 450px;
+    position: relative;
+    z-index: 99;
+    margin-top: 15%;
+    background-color: rgba(33,31,37,0.8);
+    border-radius: 20px;
+    padding-top:75px;
+}
+
+.ing{
+    text-align: center;
+    margin-top: 35px;
+    color: white;
+}
+
+.gr{
+    margin-left: 90px;
+    
+}
+
+.clr{
+    color: white;
+}
+
+.form-check{
+    margin-left: 85px;
+    color: white;
+}
