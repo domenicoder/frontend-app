@@ -33,3 +33,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'logo';
+    src: url('../fonts/BloxBRK.woff') format('woff2'),
+        url('../fonts/BloxBRK.woff2') format('woff');
+    font-weight: bold;
+    font-style: italic;
+   font-display: swap;
+}
