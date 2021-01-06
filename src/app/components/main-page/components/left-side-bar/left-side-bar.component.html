@@ -19,7 +19,7 @@
         <hr>
         <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
             <div class="category-list-item" *ngFor="let category of categories" (click)="changeCategory(category)">
-                <img src="../../../../../assets/icons/anime2.svg" alt="" width="24" height="24" style="border:1px black solid !important">
+                <img [src]="category.imageUrl" alt="" width="24" height="24" style="border:1px black solid !important">
                 <p class="wtheme-category-list category-list-text">{{category.name}}</p>
                 <!-- <i-bs name="eye-fill" class="text-white-50 wtheme-category-list category-list-text" width="1rem" height="1rem"></i-bs> -->
              </div>
