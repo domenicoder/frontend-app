@@ -43,4 +43,7 @@ export class LeftSideBarComponent {
       });
       this.mainService.changeFilter.emit();
      }
+     changeCategory(category){
+       this.mainService.changeCategory.emit(category);
+     }
 }

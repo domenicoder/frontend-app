@@ -22,7 +22,11 @@ export class BoardComponent implements OnInit {
       this.loadBoard();
       this.subscriptions.push(this.mainService.changeFilter.subscribe( () => {
         this.loadBoard();
-      }))
+      }),
+      this.mainService.changeCategory.subscribe( (category) => {
+        this.loadBoard();
+      })
+      )
      }
 
      loadBoard(){

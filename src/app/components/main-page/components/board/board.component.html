@@ -2,7 +2,7 @@
     <loading style="width:100%;"></loading>
 </div>
 
-<div class="container fade-in"  *ngIf="!loading">
+<div class="row m-0 container fade-in"  *ngIf="!loading">
     <div class="block" *ngFor="let block of data">
         <a href="">
             <img src="https://picsum.photos/640/480/?random" alt="">
@@ -26,5 +26,7 @@
             </span>
           </a>
     </div>
-    
+    <!-- <div class="col-12 m-0 p-0" style="height:400px;">
+
+    </div> -->
 </div>

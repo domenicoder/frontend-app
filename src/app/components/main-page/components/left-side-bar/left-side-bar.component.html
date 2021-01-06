@@ -10,15 +10,15 @@
         </div>
     </div> -->
 
-    <div class="col-12 w-100 m-0 categories-label">
-        <button type="button" class="btn wtheme-categories-button" (click)="isCollapsed = !isCollapsed"
+    <div class="col-12 w-100 m-0 p-0 categories-label">
+        <span class="btn wtheme-categories-button" (click)="isCollapsed = !isCollapsed"
         [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
             <p style="width:80%;float:left;">Categorias</p>
-            <i-bs [name]="isCollapsed == true ? 'caret-down-fill' : 'caret-up-fill'" class="text-white" width="1rem" height="1rem"  style="width:20%;float:left;padding-top:4px;color:white;"></i-bs>
-        </button>
+            <i-bs [name]="isCollapsed == true ? 'caret-down-fill' : 'caret-up-fill'" width="0.8rem" height="0.8rem" class="carret-icon text-white"></i-bs>
+        </span>
         <hr>
         <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
-            <div class="category-list-item" *ngFor="let category of categories">
+            <div class="category-list-item" *ngFor="let category of categories" (click)="changeCategory(category)">
                 <img src="../../../../../assets/icons/anime2.svg" alt="" width="24" height="24" style="border:1px black solid !important">
                 <p class="wtheme-category-list category-list-text">{{category.name}}</p>
                 <!-- <i-bs name="eye-fill" class="text-white-50 wtheme-category-list category-list-text" width="1rem" height="1rem"></i-bs> -->

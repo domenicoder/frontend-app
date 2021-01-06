@@ -1,0 +1,49 @@
+.login-register-label{
+    display: block;
+    width:100%;
+    text-align:center;
+    height: 100%;
+}
+
+.signIn-button{
+    @media screen and (min-width:1950px) {
+        width:80%;
+      }
+      @media screen and (min-width:1550px) and (max-width:1940px) {
+        width:80%;
+      }
+      @media screen and (min-width:1100px) and (max-width:1500px) {
+        width:100%;
+      }
+    // background-color: #fb5b53;
+    background-color:#1d2630;
+    color:white;  
+    display: inline-block;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.signIn-button:hover{
+    border: 1px solid rgba(251,91,83,0.64);
+}
+
+.logIn-button{
+    @media screen and (min-width:1950px) {
+        width:80%;
+      }
+      @media screen and (min-width:1550px) and (max-width:1940px) {
+        width:80%;
+      }
+      @media screen and (min-width:1100px) and (max-width:1500px) {
+        width:100%;
+    }
+    background-color:#1d2630;
+    color:white;  
+    display: inline-block;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.logIn-button:hover{
+    border: 1px solid rgba(63,249,220,0.64);
+}
