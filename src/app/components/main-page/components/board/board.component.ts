@@ -8,7 +8,12 @@ import { MockedBoardDataService } from './mocked-board-data.service';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
+    public filters = [
+      {name:'Destacado',selected:true, icon:'exclude'},
+      {name:'Subiendo',selected:false, icon:'graph-up'},
+      {name:'Nuevo',selected:false, icon:'clock-fill'},
 
+    ]
     public loading = true;
     public screenHeight : number;
     public data;

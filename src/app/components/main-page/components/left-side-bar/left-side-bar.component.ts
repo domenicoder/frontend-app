@@ -9,12 +9,6 @@ import { MainService } from '../../main.service';
 export class LeftSideBarComponent {
     public isCollapsed = false;
     public screenHeight : number;
-    public filters = [
-      {name:'Destacado',selected:true, icon:'exclude'},
-      {name:'Subiendo',selected:false, icon:'graph-up'},
-      {name:'Nuevo',selected:false, icon:'clock-fill'},
-
-    ]
     public categories = [
       {name: 'Anime', visible:true, imageUrl:'../../../../../assets/icons/anime2.svg'},
       {name: 'Ciencia', visible:true, imageUrl:'../../../../../assets/icons/ciencia2.svg'},
@@ -37,13 +31,13 @@ export class LeftSideBarComponent {
       this.screenHeight = mainService.$screenHeight;
      }
 
-     changeFilter(filterName){
-      this.filters.forEach(filter => {
-        filter.name == filterName ? filter.selected = true : filter.selected = false;
-      });
-      this.mainService.changeFilter.emit();
-     }
-     changeCategory(category){
-       this.mainService.changeCategory.emit(category);
-     }
+    //  changeFilter(filterName){
+    //   this.filters.forEach(filter => {
+    //     filter.name == filterName ? filter.selected = true : filter.selected = false;
+    //   });
+    //   this.mainService.changeFilter.emit();
+    //  }
+    //  changeCategory(category){
+    //    this.mainService.changeCategory.emit(category);
+    //  }
 }
