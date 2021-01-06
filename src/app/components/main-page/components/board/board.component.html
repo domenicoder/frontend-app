@@ -1,8 +1,14 @@
 <div class="row m-0 h-100" *ngIf="loading">
     <loading style="width:100%;"></loading>
 </div>
-
-<div class="row m-0 container fade-in"  *ngIf="!loading">
+<div class="row w-100 header">
+    <div class="col-2 m-0 p-0 h-100"></div>
+    <div class="col-8 m-0 p-0 h-100 filters">
+        <span class="filter" *ngFor="let filter of filters"><i-bs [name]="filter.icon" class="text-dark" width="1rem" height="1rem"></i-bs>{{filter.name}}</span>
+    </div>
+    <div class="col-2 m-0 p-0 h-100"></div>
+</div>
+<div class="container fade-in"  *ngIf="!loading">
     <div class="block" *ngFor="let block of data">
         <a href="">
             <img src="https://picsum.photos/640/480/?random" alt="">

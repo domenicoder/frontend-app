@@ -13,52 +13,13 @@
 
 
 .board {
-    height: 100%;max-height: 100%; width: 70%;float: left;overflow-y: hidden;
+    height: 100%;max-height: 100%; width: 72%;float: left;
 }
 
 .leftSidebar{
-  height: 100%; width: 12%;float: left;
+  height: 100%; width: 10%;float: left;
 }
 
 .rightSidebar{
   height: 100%; width: 18%;float: left;
-}
-
-.board:hover{
-    overflow-y: auto;
-}
-
-
-.board::-webkit-scrollbar-track
-{
-    -box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: #1b1f25;
-}
-
-.board::-webkit-scrollbar
-{
-    width: 8px;
-    background-color: #1b1f25;
-}
-
-.board::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #000317;
-    box-shadow: inset 0 0 6px #000317;
-    background-color: #000317;
-    height:10px;
-    max-height: 10px;
-    border: 1px solid black(251,91,83,0.8);
-}
-
-.board::-webkit-scrollbar-track-piece:end {
-  background: transparent;
-  margin-bottom: 10px; 
-}
-
-.board::-webkit-scrollbar-track-piece:start {
-  background: transparent;
-  height: 10px;
 }
